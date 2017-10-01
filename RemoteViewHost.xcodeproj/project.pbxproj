@@ -69,6 +69,8 @@
 		48A9CF391F8084BD00D2008A /* NSViewBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSViewBridge.h; sourceTree = "<group>"; };
 		48A9CF3A1F80850500D2008A /* NSRemoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRemoteViewController.h; sourceTree = "<group>"; };
 		48A9CF3B1F80850C00D2008A /* NSServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSServiceViewController.h; sourceTree = "<group>"; };
+		48A9CF3C1F8085BF00D2008A /* Sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample.png; sourceTree = "<group>"; };
+		48A9CF3D1F8085CD00D2008A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,8 @@
 		48A9CEEA1F807F8B00D2008A = {
 			isa = PBXGroup;
 			children = (
+				48A9CF3D1F8085CD00D2008A /* README.md */,
+				48A9CF3C1F8085BF00D2008A /* Sample.png */,
 				48A9CEF51F807F8B00D2008A /* RemoteViewHost */,
 				48A9CF091F807F9D00D2008A /* RemoteViewService */,
 				48A9CF1F1F80801200D2008A /* ViewBridgePublic */,
