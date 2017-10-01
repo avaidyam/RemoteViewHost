@@ -10,7 +10,47 @@
 		48A9CEF71F807F8B00D2008A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A9CEF61F807F8B00D2008A /* AppDelegate.swift */; };
 		48A9CEF91F807F8B00D2008A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A9CEF81F807F8B00D2008A /* Assets.xcassets */; };
 		48A9CEFC1F807F8B00D2008A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A9CEFA1F807F8B00D2008A /* MainMenu.xib */; };
+		48A9CF131F807F9D00D2008A /* RemoteViewService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 48A9CF081F807F9D00D2008A /* RemoteViewService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		48A9CF301F80812D00D2008A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A9CF2F1F80812D00D2008A /* main.swift */; };
+		48A9CF331F80820900D2008A /* ViewBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A9CF2D1F80802E00D2008A /* ViewBridge.framework */; };
+		48A9CF341F80821200D2008A /* ViewBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A9CF2D1F80802E00D2008A /* ViewBridge.framework */; };
+		48A9CF361F80824600D2008A /* MyServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A9CF351F80824600D2008A /* MyServiceViewController.swift */; };
+		48A9CF381F80825D00D2008A /* MyServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A9CF371F80825D00D2008A /* MyServiceViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48A9CF111F807F9D00D2008A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48A9CEEB1F807F8B00D2008A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48A9CF071F807F9D00D2008A;
+			remoteInfo = RemoteViewService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48A9CF171F807F9D00D2008A /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				48A9CF131F807F9D00D2008A /* RemoteViewService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A9CF2A1F80801200D2008A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		48A9CEF31F807F8B00D2008A /* RemoteViewHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteViewHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,7 +58,17 @@
 		48A9CEF81F807F8B00D2008A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48A9CEFB1F807F8B00D2008A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		48A9CEFD1F807F8B00D2008A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48A9CEFE1F807F8B00D2008A /* RemoteViewHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteViewHost.entitlements; sourceTree = "<group>"; };
+		48A9CF081F807F9D00D2008A /* RemoteViewService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = RemoteViewService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A9CF101F807F9D00D2008A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48A9CF181F807FBF00D2008A /* RemoteViewHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteViewHost.entitlements; sourceTree = "<group>"; };
+		48A9CF201F80801200D2008A /* ViewBridgePublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewBridgePublic.h; sourceTree = "<group>"; };
+		48A9CF2D1F80802E00D2008A /* ViewBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViewBridge.framework; path = ../../../../../../System/Library/PrivateFrameworks/ViewBridge.framework; sourceTree = "<group>"; };
+		48A9CF2F1F80812D00D2008A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		48A9CF351F80824600D2008A /* MyServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyServiceViewController.swift; sourceTree = "<group>"; };
+		48A9CF371F80825D00D2008A /* MyServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyServiceViewController.xib; sourceTree = "<group>"; };
+		48A9CF391F8084BD00D2008A /* NSViewBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSViewBridge.h; sourceTree = "<group>"; };
+		48A9CF3A1F80850500D2008A /* NSRemoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRemoteViewController.h; sourceTree = "<group>"; };
+		48A9CF3B1F80850C00D2008A /* NSServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSServiceViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +76,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A9CF341F80821200D2008A /* ViewBridge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A9CF051F807F9D00D2008A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A9CF331F80820900D2008A /* ViewBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				48A9CEF51F807F8B00D2008A /* RemoteViewHost */,
+				48A9CF091F807F9D00D2008A /* RemoteViewService */,
+				48A9CF1F1F80801200D2008A /* ViewBridgePublic */,
 				48A9CEF41F807F8B00D2008A /* Products */,
+				48A9CF2B1F80801D00D2008A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				48A9CEF31F807F8B00D2008A /* RemoteViewHost.app */,
+				48A9CF081F807F9D00D2008A /* RemoteViewService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,9 +118,39 @@
 				48A9CEF81F807F8B00D2008A /* Assets.xcassets */,
 				48A9CEFA1F807F8B00D2008A /* MainMenu.xib */,
 				48A9CEFD1F807F8B00D2008A /* Info.plist */,
-				48A9CEFE1F807F8B00D2008A /* RemoteViewHost.entitlements */,
+				48A9CF181F807FBF00D2008A /* RemoteViewHost.entitlements */,
 			);
 			path = RemoteViewHost;
+			sourceTree = "<group>";
+		};
+		48A9CF091F807F9D00D2008A /* RemoteViewService */ = {
+			isa = PBXGroup;
+			children = (
+				48A9CF351F80824600D2008A /* MyServiceViewController.swift */,
+				48A9CF371F80825D00D2008A /* MyServiceViewController.xib */,
+				48A9CF2F1F80812D00D2008A /* main.swift */,
+				48A9CF101F807F9D00D2008A /* Info.plist */,
+			);
+			path = RemoteViewService;
+			sourceTree = "<group>";
+		};
+		48A9CF1F1F80801200D2008A /* ViewBridgePublic */ = {
+			isa = PBXGroup;
+			children = (
+				48A9CF201F80801200D2008A /* ViewBridgePublic.h */,
+				48A9CF391F8084BD00D2008A /* NSViewBridge.h */,
+				48A9CF3A1F80850500D2008A /* NSRemoteViewController.h */,
+				48A9CF3B1F80850C00D2008A /* NSServiceViewController.h */,
+			);
+			path = ViewBridgePublic;
+			sourceTree = "<group>";
+		};
+		48A9CF2B1F80801D00D2008A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48A9CF2D1F80802E00D2008A /* ViewBridge.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,15 +163,35 @@
 				48A9CEEF1F807F8B00D2008A /* Sources */,
 				48A9CEF01F807F8B00D2008A /* Frameworks */,
 				48A9CEF11F807F8B00D2008A /* Resources */,
+				48A9CF171F807F9D00D2008A /* Embed XPC Services */,
+				48A9CF2A1F80801200D2008A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				48A9CF121F807F9D00D2008A /* PBXTargetDependency */,
 			);
 			name = RemoteViewHost;
 			productName = RemoteViewHost;
 			productReference = 48A9CEF31F807F8B00D2008A /* RemoteViewHost.app */;
 			productType = "com.apple.product-type.application";
+		};
+		48A9CF071F807F9D00D2008A /* RemoteViewService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A9CF141F807F9D00D2008A /* Build configuration list for PBXNativeTarget "RemoteViewService" */;
+			buildPhases = (
+				48A9CF041F807F9D00D2008A /* Sources */,
+				48A9CF051F807F9D00D2008A /* Frameworks */,
+				48A9CF061F807F9D00D2008A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteViewService;
+			productName = RemoteViewService;
+			productReference = 48A9CF081F807F9D00D2008A /* RemoteViewService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +205,16 @@
 				TargetAttributes = {
 					48A9CEF21F807F8B00D2008A = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					48A9CF071F807F9D00D2008A = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -110,6 +233,7 @@
 			projectRoot = "";
 			targets = (
 				48A9CEF21F807F8B00D2008A /* RemoteViewHost */,
+				48A9CF071F807F9D00D2008A /* RemoteViewService */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +248,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48A9CF061F807F9D00D2008A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A9CF381F80825D00D2008A /* MyServiceViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,7 +267,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48A9CF041F807F9D00D2008A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A9CF361F80824600D2008A /* MyServiceViewController.swift in Sources */,
+				48A9CF301F80812D00D2008A /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48A9CF121F807F9D00D2008A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48A9CF071F807F9D00D2008A /* RemoteViewService */;
+			targetProxy = 48A9CF111F807F9D00D2008A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		48A9CEFA1F807F8B00D2008A /* MainMenu.xib */ = {
@@ -258,15 +407,20 @@
 		48A9CF021F807F8B00D2008A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RemoteViewHost/RemoteViewHost.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2754ZHC8VE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				INFOPLIST_FILE = RemoteViewHost/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.RemoteViewHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ./ViewBridgePublic/ViewBridgePublic.h;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -274,16 +428,66 @@
 		48A9CF031F807F8B00D2008A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RemoteViewHost/RemoteViewHost.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2754ZHC8VE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				INFOPLIST_FILE = RemoteViewHost/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.RemoteViewHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ./ViewBridgePublic/ViewBridgePublic.h;
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		48A9CF151F807F9D00D2008A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2754ZHC8VE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				INFOPLIST_FILE = RemoteViewService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.RemoteViewService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = ./ViewBridgePublic/ViewBridgePublic.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		48A9CF161F807F9D00D2008A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2754ZHC8VE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				INFOPLIST_FILE = RemoteViewService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.RemoteViewService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = ./ViewBridgePublic/ViewBridgePublic.h;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -304,6 +508,15 @@
 			buildConfigurations = (
 				48A9CF021F807F8B00D2008A /* Debug */,
 				48A9CF031F807F8B00D2008A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A9CF141F807F9D00D2008A /* Build configuration list for PBXNativeTarget "RemoteViewService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A9CF151F807F9D00D2008A /* Debug */,
+				48A9CF161F807F9D00D2008A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
